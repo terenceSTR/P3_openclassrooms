@@ -1,0 +1,102 @@
+#bloc-page {
+  max-width: 100%;
+}
+#bloc-page .conteneur-logo {
+  display: flex;
+  justify-content: center;
+}
+#bloc-page .conteneur-logo--logo {
+  width: 200px;
+}
+#bloc-page .conteneur-principal {
+  margin-top: 30px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#bloc-page .conteneur-paris {
+  background-color: #cdcdcd;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: solid 3px #bababa;
+}
+#bloc-page .conteneur-paris--p-paris {
+  font-weight: 900;
+}
+#bloc-page .fa-map-marker-alt {
+  margin-right: 15px;
+}
+#bloc-page button {
+  color: white;
+  background-color: #9356DC;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0 3px 3px 3px #cdcdcd;
+  height: 40px;
+  margin-bottom: 50px;
+}
+#bloc-page .conteneur-fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#bloc-page .conteneur-fonctionnement--fonctionnement {
+  background-color: #f2f2f2;
+  max-width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  padding-top: 20px;
+}
+#bloc-page h2 {
+  width: 100%;
+}
+#bloc-page .fa-mobile-alt {
+  margin-left: 20px;
+  margin-right: 15px;
+}
+#bloc-page .fa-list {
+  margin-left: 20px;
+  margin-right: 15px;
+}
+#bloc-page .fa-store {
+  margin-left: 20px;
+  margin-right: 15px;
+}
+#bloc-page .fa-circle {
+  color: blueviolet;
+}
+#bloc-page img {
+  max-width: 300px;
+}
+#bloc-page .conteneur-restaurants {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#bloc-page .conteneur-restaurants--menu {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+#bloc-page .footer {
+  background-color: #383838;
+}
+#bloc-page .footer--logo-blanc {
+  width: 100px;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+#bloc-page li {
+  color: white;
+  list-style-type: none;
+}
+#bloc-page a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
