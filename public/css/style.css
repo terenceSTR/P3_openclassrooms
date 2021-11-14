@@ -28,6 +28,10 @@
 #bloc-page .fa-map-marker-alt {
   margin-right: 15px;
 }
+#bloc-page .fa-heart:hover {
+  background-color: #9356DC;
+  color: black;
+}
 #bloc-page button {
   color: white;
   background-color: #9356DC;
@@ -41,6 +45,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 60px;
 }
 #bloc-page .conteneur-fonctionnement--fonctionnement {
   background-color: #f2f2f2;
@@ -48,6 +53,20 @@
   height: 40px;
   border-radius: 20px;
   padding-top: 20px;
+}
+#bloc-page .conteneur-fonctionnement .fonctionnement-puce {
+  background-color: #9356DC;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+  text-align: center;
+  position: absolute;
+  margin-left: -10px;
+  margin-top: 30px;
+}
+#bloc-page .conteneur-fonctionnement .p-fonctionnement {
+  padding-right: 15px;
 }
 #bloc-page h2 {
   width: 100%;
@@ -63,9 +82,6 @@
 #bloc-page .fa-store {
   margin-left: 20px;
   margin-right: 15px;
-}
-#bloc-page .fa-circle {
-  color: blueviolet;
 }
 #bloc-page img {
   max-width: 300px;
@@ -83,6 +99,38 @@
   max-width: 300px;
   margin-bottom: 30px;
 }
+#bloc-page .nouveau {
+  width: 60px;
+  background-color: #99E2D0;
+  color: #127212;
+  margin-top: 60px;
+  margin-left: 200px;
+  position: absolute;
+  font-size: 15px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#bloc-page .nouveau--nouveau2 {
+  width: 60px;
+  background-color: #99E2D0;
+  color: #127212;
+  margin-top: 320px;
+  margin-left: 200px;
+  position: absolute;
+  font-size: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#bloc-page .texte-menu-icon {
+  display: flex;
+  justify-content: space-between;
+}
+#bloc-page .restaurant-icon-coeur {
+  padding-right: 20px;
+  padding-top: 40px;
+  color: black;
+}
 #bloc-page .footer {
   background-color: #383838;
 }
@@ -97,6 +145,125 @@
 }
 #bloc-page a {
   text-decoration: none;
+  color: white;
+}
+
+.bloc-page-restaurant-details {
+  max-width: 100%;
+}
+.bloc-page-restaurant-details .conteneur-logo {
+  display: flex;
+  justify-content: center;
+}
+.bloc-page-restaurant-details .conteneur-logo--logo {
+  width: 200px;
+}
+.bloc-page-restaurant-details .conteneur-la-note {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bloc-page-restaurant-details .conteneur-la-note .conteneur-titre-la-note {
+  display: flex;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  margin-top: -30px;
+  position: relative;
+  width: 100%;
+}
+.bloc-page-restaurant-details h4 {
+  width: 100%;
+  font-weight: 300;
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
+}
+.bloc-page-restaurant-details h4:after {
+  content: "";
+  position: absolute;
+  width: 8%;
+  height: 3px;
+  bottom: 0;
+  left: 0%;
+  border-bottom: 3px solid #99E2D0;
+}
+.bloc-page-restaurant-details .fleche-retour {
+  width: 100%;
+  position: absolute;
+}
+.bloc-page-restaurant-details .fa-heart {
+  padding-top: 25px;
+  padding-left: 15px;
+}
+.bloc-page-restaurant-details .fa-heart:hover {
+  color: #9356DC;
+}
+.bloc-page-restaurant-details img {
+  width: 100%;
+}
+.bloc-page-restaurant-details .choix {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 20px;
+  width: 90%;
+  margin-top: 20px;
+}
+.bloc-page-restaurant-details .prix {
+  padding-top: 40px;
+  padding-right: 15px;
+}
+.bloc-page-restaurant-details h1 {
+  margin-left: 15px;
+}
+.bloc-page-restaurant-details .bouton {
+  color: white;
+  background-color: #9356DC;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0 3px 3px 3px #cdcdcd;
+  height: 40px;
+  margin-bottom: 100px;
+  margin-top: 80px;
+  width: 130px;
+  height: 50px;
+}
+.bloc-page-restaurant-details .footer {
+  background-color: #383838;
+}
+.bloc-page-restaurant-details .footer--logo-blanc {
+  width: 100px;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+.bloc-page-restaurant-details .footer a {
+  color: white;
+}
+.bloc-page-restaurant-details li {
+  color: white;
+  list-style-type: none;
+}
+.bloc-page-restaurant-details a {
+  text-decoration: none;
+}
+
+p {
+  font-family: Roboto;
+}
+
+h1 h2 h3 h4 {
+  font-family: Shrikhand;
+}
+
+p, h2, h4 {
+  padding-left: 20px;
+  margin-block-start: 10px;
+  margin-block-end: 10px;
+}
+
+p, h1, h2, h3, h4 {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
