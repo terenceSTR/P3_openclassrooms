@@ -49,16 +49,6 @@
     color: black;
 }
 
-button
-{
-    color: white;
-    background-color: $primaire ;
-    border:0;
-    border-radius: 20px;
-    box-shadow: 0 3px 3px 3px #cdcdcd;
-    height: 40px;
-    margin-bottom: 50px;
-}
 
 .conteneur-fonctionnement
 {
@@ -213,6 +203,22 @@ a
 
 }
 
+.bouton
+{
+    color: white;
+    border:0;
+    border-radius: 30px;
+    box-shadow: 0 3px 3px 3px #cdcdcd;
+    height: 40px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+    width: auto;
+    height: 50px;
+    font-weight: bold;
+    background: linear-gradient(to left top, #9356DC, #FF79DA);
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 
 @media only screen and (max-width: 1400px)

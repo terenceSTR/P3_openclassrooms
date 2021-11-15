@@ -32,15 +32,6 @@
   background-color: #9356DC;
   color: black;
 }
-#bloc-page button {
-  color: white;
-  background-color: #9356DC;
-  border: 0;
-  border-radius: 20px;
-  box-shadow: 0 3px 3px 3px #cdcdcd;
-  height: 40px;
-  margin-bottom: 50px;
-}
 #bloc-page .conteneur-fonctionnement {
   display: flex;
   flex-direction: column;
@@ -148,9 +139,22 @@
   color: white;
 }
 
-.bloc-page-restaurant-details {
-  max-width: 100%;
+.bouton {
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  box-shadow: 0 3px 3px 3px #cdcdcd;
+  height: 40px;
+  margin-bottom: 100px;
+  margin-top: 80px;
+  width: auto;
+  height: 50px;
+  font-weight: bold;
+  background: linear-gradient(to left top, #9356DC, #FF79DA);
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
 .bloc-page-restaurant-details .conteneur-logo {
   display: flex;
   justify-content: center;
@@ -217,18 +221,6 @@
 .bloc-page-restaurant-details h1 {
   margin-left: 15px;
 }
-.bloc-page-restaurant-details .bouton {
-  color: white;
-  background-color: #9356DC;
-  border: 0;
-  border-radius: 20px;
-  box-shadow: 0 3px 3px 3px #cdcdcd;
-  height: 40px;
-  margin-bottom: 100px;
-  margin-top: 80px;
-  width: 130px;
-  height: 50px;
-}
 .bloc-page-restaurant-details .footer {
   background-color: #383838;
 }
@@ -248,12 +240,12 @@
   text-decoration: none;
 }
 
-p {
-  font-family: Roboto;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 h1 h2 h3 h4 {
-  font-family: Shrikhand;
+  font-family: "Shrikhand", cursif;
 }
 
 p, h2, h4 {
