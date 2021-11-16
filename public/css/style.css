@@ -221,6 +221,18 @@
 .bloc-page-restaurant-details h1 {
   margin-left: 15px;
 }
+.bloc-page-restaurant-details .choix__confirmation {
+  position: relative;
+  margin-right: -70px;
+  width: 75px;
+  height: 80px;
+  background-color: #99E2D0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 20px 20px 0;
+}
 .bloc-page-restaurant-details .footer {
   background-color: #383838;
 }

@@ -100,7 +100,19 @@ h1
     margin-left: 15px;
 }
 
-
+.choix__confirmation
+{
+    position: relative;
+    margin-right: -70px;
+    width: 75px;
+    height: 80px;
+    background-color: $tertiaire;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 20px 20px 0 ;
+}
 
 .footer
 {
