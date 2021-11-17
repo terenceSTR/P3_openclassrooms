@@ -170,6 +170,7 @@
 }
 .bloc-page-restaurant-details .conteneur-la-note .conteneur-titre-la-note {
   display: flex;
+  justify-content: space-between;
   background-color: #f2f2f2;
   border-radius: 30px;
   margin-top: -30px;
@@ -197,14 +198,18 @@
   position: absolute;
 }
 .bloc-page-restaurant-details .fa-heart {
-  padding-top: 25px;
-  padding-left: 15px;
+  padding-top: 20px;
+  padding-right: 20px;
+  font-size: 20px;
 }
 .bloc-page-restaurant-details .fa-heart:hover {
-  color: #9356DC;
+  background-color: #9356DC;
 }
 .bloc-page-restaurant-details img {
   width: 100%;
+}
+.bloc-page-restaurant-details h1 {
+  margin-left: 15px;
 }
 .bloc-page-restaurant-details .choix {
   display: flex;
@@ -213,16 +218,9 @@
   border-radius: 20px;
   width: 90%;
   margin-top: 20px;
-}
-.bloc-page-restaurant-details .prix {
-  padding-top: 40px;
-  padding-right: 15px;
-}
-.bloc-page-restaurant-details h1 {
-  margin-left: 15px;
+  overflow: hidden;
 }
 .bloc-page-restaurant-details .choix__confirmation {
-  position: relative;
   margin-right: -70px;
   width: 75px;
   height: 80px;
@@ -232,6 +230,23 @@
   align-items: center;
   justify-content: center;
   border-radius: 0 20px 20px 0;
+  transition: transform 500ms;
+  transform: translateX(0);
+  margin-right: 0 !important;
+  position: absolute !important;
+  right: -75px;
+}
+.bloc-page-restaurant-details .prix {
+  padding-top: 40px;
+  padding-right: 15px;
+}
+.bloc-page-restaurant-details .choix:hover .choix__confirmation {
+  transform: translateX(-75px);
+}
+.bloc-page-restaurant-details .intitule-prix {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .bloc-page-restaurant-details .footer {
   background-color: #383838;
@@ -251,13 +266,20 @@
 .bloc-page-restaurant-details a {
   text-decoration: none;
 }
+.bloc-page-restaurant-details h2 {
+  font-size: 23px;
+}
+.bloc-page-restaurant-details p {
+  font-size: 18px;
+}
+.bloc-page-restaurant-details h1 {
+  font-family: "Shrikhand", cursif;
+  font-weight: bold;
+  font-size: 26px;
+}
 
 body {
   font-family: "Roboto", sans-serif;
-}
-
-h1 h2 h3 h4 {
-  font-family: "Shrikhand", cursif;
 }
 
 p, h2, h4 {

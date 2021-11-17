@@ -24,6 +24,7 @@
 .conteneur-titre-la-note
 {
     display: flex;
+    justify-content: space-between;
     background-color: #f2f2f2;
     border-radius: 30px;
     margin-top: -30px;
@@ -65,18 +66,26 @@ h4
 
 .fa-heart
 {
-    padding-top: 25px;
-    padding-left: 15px;
+    padding-top: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    
 
     &:hover
     {
-        color: $primaire;
+       background-color: $primaire;
     }
 }
 
 img
 {
     width: 100%;
+}
+
+
+h1
+{
+    margin-left: 15px;
 }
 
 .choix
@@ -87,22 +96,10 @@ img
     border-radius: 20px;
     width: 90%;
     margin-top: 20px;
-}
+    overflow: hidden;
 
-.prix
+    &__confirmation
 {
-    padding-top: 40px;
-    padding-right: 15px;
-}
-
-h1
-{
-    margin-left: 15px;
-}
-
-.choix__confirmation
-{
-    position: relative;
     margin-right: -70px;
     width: 75px;
     height: 80px;
@@ -112,7 +109,31 @@ h1
     align-items: center;
     justify-content: center;
     border-radius: 0 20px 20px 0 ;
+    transition: transform 500ms;
+    transform: translateX(0);
+    margin-right: 0 !important;
+    position: absolute !important;
+    right: -75px;
 }
+}
+
+.prix
+{
+    padding-top: 40px;
+    padding-right: 15px;
+}
+
+  .choix:hover .choix__confirmation 
+  {
+    transform: translateX(-75px);
+  }
+
+  .intitule-prix 
+  {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  } 
 
 .footer
 {
@@ -140,5 +161,24 @@ a
 {
     text-decoration: none;
 }
+
+h2
+{
+font-size: 23px;
+}
+
+p
+{
+font-size: 18px;
+}
+
+h1
+{
+    font-family : 'Shrikhand', cursif ;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+
 }
 
