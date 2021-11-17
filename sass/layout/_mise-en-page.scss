@@ -2,13 +2,6 @@
 {
     max-width: 100%;
 
-   @keyframes chargeur {
-        100% {
-          opacity: 0;
-          z-index: 1;
-        }
-      }
-
       .chargeur {
         background-color: #f5edff;
         animation: chargeur 3s;
@@ -34,28 +27,10 @@
         animation: spin 1s linear infinite;
       }
       
-      @keyframes spin {
-        0%{  transform: rotate(0deg);
-        }
-        100%{
-            transform: rotate(360deg);
-        }
-      }
-    
-.conteneur-logo
-{
-    display: flex;
-    justify-content: center;
-
-        &--logo
-        {
-        width: 200px  ;  
-        }
-}
 
 .conteneur-principal
 {
-    margin-top: 30px;
+    margin-top: 10px;
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
@@ -72,7 +47,8 @@
 
      &--p-paris
     {
-      font-weight: 900;
+        font-size: 15px;
+      font-weight: 600;
     }
 }
 
@@ -127,6 +103,7 @@
 
 
 h2{
+    margin-top: 40px;
     width: 100%;
 }
 
@@ -176,7 +153,7 @@ align-items: center;
    width: 60px;
    background-color: $tertiaire;
    color: rgb(18, 114, 18);
-   margin-top: 60px;
+   margin-top: 100px;
    margin-left: 200px;
    position: absolute;
    font-size: 15px;
@@ -189,7 +166,7 @@ align-items: center;
        width: 60px;
        background-color: $tertiaire;
        color: rgb(18, 114, 18);
-       margin-top: 320px;
+       margin-top: 360px;
        margin-left: 200px;
        position: absolute;
        font-size: 15px;
@@ -214,20 +191,6 @@ align-items: center;
     color: black;
 }
 
-.footer
-{
-background-color: #383838;
-
-        &--logo-blanc
-        {
-            width: 100px;
-            padding-top: 20px ;
-            padding-left: 40px;
-        }
-}
-
-
-
 li
 {
     color: white;
@@ -243,6 +206,35 @@ a
 
 }
 
+.conteneur-logo
+{
+    display: flex;
+    justify-content: center;
+
+        &--logo
+        {
+        width: 180px  ;  
+        }
+}
+
+
+.footer
+{
+background-color: #383838;
+
+        &--logo-blanc
+        {
+            width: 100px;
+            padding-top: 20px ;
+            padding-left: 40px;
+        }
+
+        a
+        {
+            color: white;
+        }
+}
+
 .bouton
 {
     color: white;
@@ -250,8 +242,8 @@ a
     border-radius: 30px;
     box-shadow: 0 3px 3px 3px #cdcdcd;
     height: 40px;
-    margin-bottom: 100px;
-    margin-top: 80px;
+    margin-bottom: 50px;
+    margin-top: 30px;
     width: auto;
     height: 50px;
     font-weight: bold;
@@ -278,6 +270,14 @@ h1, .decouvrez
     text-align: center;
 }
 
+.fa-utensils
+{
+    margin-right: 10px;
+}
+.fa-hands-helping
+{
+    margin-right: 2px;
+}
 
 @media only screen and (max-width: 1400px)
 {

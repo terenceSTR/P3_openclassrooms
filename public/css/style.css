@@ -1,17 +1,11 @@
 #bloc-page {
   max-width: 100%;
 }
-@keyframes chargeur {
-  100% {
-    opacity: 0;
-    z-index: 0;
-  }
-}
 #bloc-page .chargeur {
   background-color: #f5edff;
   animation: chargeur 3s;
   animation-delay: 3s;
-  animation-fill-mode: both;
+  animation-fill-mode: forwards;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -31,23 +25,8 @@
   height: 100px;
   animation: spin 1s linear infinite;
 }
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-#bloc-page .conteneur-logo {
-  display: flex;
-  justify-content: center;
-}
-#bloc-page .conteneur-logo--logo {
-  width: 200px;
-}
 #bloc-page .conteneur-principal {
-  margin-top: 30px;
+  margin-top: 10px;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -61,7 +40,8 @@
   border-top: solid 3px #bababa;
 }
 #bloc-page .conteneur-paris--p-paris {
-  font-weight: 900;
+  font-size: 15px;
+  font-weight: 600;
 }
 #bloc-page .fa-map-marker-alt {
   margin-right: 15px;
@@ -98,6 +78,7 @@
   padding-left: 25px;
 }
 #bloc-page h2 {
+  margin-top: 40px;
   width: 100%;
 }
 #bloc-page .fa-mobile-alt {
@@ -132,7 +113,7 @@
   width: 60px;
   background-color: #99E2D0;
   color: #127212;
-  margin-top: 60px;
+  margin-top: 100px;
   margin-left: 200px;
   position: absolute;
   font-size: 15px;
@@ -144,7 +125,7 @@
   width: 60px;
   background-color: #99E2D0;
   color: #127212;
-  margin-top: 320px;
+  margin-top: 360px;
   margin-left: 200px;
   position: absolute;
   font-size: 15px;
@@ -160,14 +141,6 @@
   padding-top: 40px;
   color: black;
 }
-#bloc-page .footer {
-  background-color: #383838;
-}
-#bloc-page .footer--logo-blanc {
-  width: 100px;
-  padding-top: 20px;
-  padding-left: 40px;
-}
 #bloc-page li {
   color: white;
   list-style-type: none;
@@ -177,14 +150,34 @@
   color: white;
 }
 
+.conteneur-logo {
+  display: flex;
+  justify-content: center;
+}
+.conteneur-logo--logo {
+  width: 180px;
+}
+
+.footer {
+  background-color: #383838;
+}
+.footer--logo-blanc {
+  width: 100px;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+.footer a {
+  color: white;
+}
+
 .bouton {
   color: white;
   border: 0;
   border-radius: 30px;
   box-shadow: 0 3px 3px 3px #cdcdcd;
   height: 40px;
-  margin-bottom: 100px;
-  margin-top: 80px;
+  margin-bottom: 50px;
+  margin-top: 30px;
   width: auto;
   height: 50px;
   font-weight: bold;
@@ -208,10 +201,14 @@ h1, .decouvrez {
   text-align: center;
 }
 
-.bloc-page-restaurant-details .conteneur-logo {
-  display: flex;
-  justify-content: center;
+.fa-utensils {
+  margin-right: 10px;
 }
+
+.fa-hands-helping {
+  margin-right: 2px;
+}
+
 .bloc-page-restaurant-details .conteneur-logo--logo {
   width: 200px;
 }
@@ -269,14 +266,17 @@ h1, .decouvrez {
   justify-content: space-between;
   background-color: white;
   border-radius: 20px;
-  width: 90%;
+  width: 95%;
   margin-top: 20px;
   overflow: hidden;
+  animation: apparition-choix 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 .bloc-page-restaurant-details .choix__confirmation {
   margin-right: -70px;
   width: 75px;
-  height: 80px;
+  height: 82px;
   background-color: #99E2D0;
   color: white;
   display: flex;
@@ -301,16 +301,8 @@ h1, .decouvrez {
   display: flex;
   justify-content: space-between;
 }
-.bloc-page-restaurant-details .footer {
-  background-color: #383838;
-}
 .bloc-page-restaurant-details .footer--logo-blanc {
   width: 100px;
-  padding-top: 20px;
-  padding-left: 40px;
-}
-.bloc-page-restaurant-details .footer a {
-  color: white;
 }
 .bloc-page-restaurant-details li {
   color: white;
@@ -320,15 +312,18 @@ h1, .decouvrez {
   text-decoration: none;
 }
 .bloc-page-restaurant-details h2 {
-  font-size: 23px;
+  font-size: 17px;
 }
 .bloc-page-restaurant-details p {
-  font-size: 18px;
+  font-size: 13px;
 }
 .bloc-page-restaurant-details h1 {
   font-family: "Shrikhand", cursif;
   font-weight: bold;
   font-size: 26px;
+}
+.bloc-page-restaurant-details .fa-arrow-left {
+  color: black;
 }
 
 body {
@@ -343,6 +338,34 @@ p, h2, h4 {
 
 p, h1, h2, h3, h4 {
   color: black;
+}
+
+@keyframes chargeur {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes apparition-choix {
+  0% {
+    transform: scale(0);
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

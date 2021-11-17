@@ -1,17 +1,9 @@
 .bloc-page-restaurant-details
 {
 
-
-.conteneur-logo
-{
-    display: flex;
-  justify-content: center;
-
-    
-        &--logo
-        {
-        width: 200px  ;
-        }
+.conteneur-logo--logo
+ {
+width: 200px  ;
 }
 
 .conteneur-la-note
@@ -52,7 +44,6 @@ h4
       height: 3px;
       bottom: 0;
       left: 0%;
-   
       border-bottom: 3px solid $tertiaire;
    
   }
@@ -94,15 +85,18 @@ h1
     justify-content: space-between;
     background-color: white;
     border-radius: 20px;
-    width: 90%;
+    width: 95%;
     margin-top: 20px;
     overflow: hidden;
+    animation: apparition-choix 0.5s ;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 
     &__confirmation
 {
     margin-right: -70px;
     width: 75px;
-    height: 80px;
+    height: 82px;
     background-color: $tertiaire;
     color: white;
     display: flex;
@@ -135,21 +129,9 @@ h1
     justify-content: space-between;
   } 
 
-.footer
+.footer--logo-blanc
 {
-    background-color: #383838;
-
-        &--logo-blanc
-        {
-            width: 100px;
-            padding-top: 20px ;
-            padding-left: 40px;
-        }
-
-        a
-        {
-            color: white;
-        }
+    width: 100px;
 }
 
 li
@@ -164,12 +146,12 @@ a
 
 h2
 {
-font-size: 23px;
+font-size: 17px;
 }
 
 p
 {
-font-size: 18px;
+font-size: 13px;
 }
 
 h1
@@ -179,6 +161,10 @@ h1
     font-size: 26px;
 }
 
+.fa-arrow-left
+{
+    color: black;
+}
 
 }
 
