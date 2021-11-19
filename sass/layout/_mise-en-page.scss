@@ -258,11 +258,22 @@ background-color: #383838;
     box-shadow: 0 3px 3px 3px #a5a4a4;
 }
 
-.fa-heart:hover
+.fa-heart:active
 {
-    transition: 700ms;
-    background-color: $primaire;
-    color: black;
+color: $primaire;
+}
+
+.fa-heart
+{
+    color: gray;
+    /*border: solid 1px #f2f2f2;*/
+
+    &:hover
+    {
+        transition: 700ms;
+       color: $primaire;
+    }
+    
 }
 
 h1, .decouvrez
@@ -279,7 +290,16 @@ h1, .decouvrez
     margin-right: 2px;
 }
 
-@media only screen and (max-width: 1400px)
+@media only screen and (min-width: 768px)
 {
+.conteneur-fonctionnement
+{
+    flex-direction: row;
+}
 
+.conteneur-restaurants
+{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 }

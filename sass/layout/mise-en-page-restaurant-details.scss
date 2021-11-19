@@ -57,15 +57,8 @@ h4
 
 .fa-heart
 {
-    padding-top: 20px;
-    padding-right: 20px;
-    font-size: 20px;
-
-    &:hover
-    {
-       background-color: $primaire;
-    }
-    
+   padding-top: 15px;
+    padding-right: 15px;
 }
 
 img
@@ -88,9 +81,9 @@ h1
     width: 95%;
     margin-top: 20px;
     overflow: hidden;
-    animation: apparition-choix 0.5s ;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
+    animation: apparition-choix 0.5s ;  /* apparition */
+    animation-timing-function: ease-in-out; 
+    animation-fill-mode: forwards; /* <-cacher 'check'  */
 
     &__confirmation
 {
@@ -103,7 +96,7 @@ h1
     align-items: center;
     justify-content: center;
     border-radius: 0 20px 20px 0 ;
-    transition: transform 500ms;
+    transition: transform 500ms; /* 'transition check' */
     transform: translateX(0);
     margin-right: 0 !important;
     position: absolute !important;

@@ -191,10 +191,17 @@
   box-shadow: 0 3px 3px 3px #a5a4a4;
 }
 
+.fa-heart:active {
+  color: #9356DC;
+}
+
+.fa-heart {
+  color: gray;
+  /*border: solid 1px #f2f2f2;*/
+}
 .fa-heart:hover {
   transition: 700ms;
-  background-color: #9356DC;
-  color: black;
+  color: #9356DC;
 }
 
 h1, .decouvrez {
@@ -209,6 +216,16 @@ h1, .decouvrez {
   margin-right: 2px;
 }
 
+@media only screen and (min-width: 768px) {
+  .conteneur-fonctionnement {
+    flex-direction: row;
+  }
+
+  .conteneur-restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .bloc-page-restaurant-details .conteneur-logo--logo {
   width: 200px;
 }
@@ -248,12 +265,8 @@ h1, .decouvrez {
   position: absolute;
 }
 .bloc-page-restaurant-details .fa-heart {
-  padding-top: 20px;
-  padding-right: 20px;
-  font-size: 20px;
-}
-.bloc-page-restaurant-details .fa-heart:hover {
-  background-color: #9356DC;
+  padding-top: 15px;
+  padding-right: 15px;
 }
 .bloc-page-restaurant-details img {
   width: 100%;
@@ -270,8 +283,10 @@ h1, .decouvrez {
   margin-top: 20px;
   overflow: hidden;
   animation: apparition-choix 0.5s;
+  /* apparition */
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
+  /* <-cacher 'check'  */
 }
 .bloc-page-restaurant-details .choix__confirmation {
   margin-right: -70px;
@@ -284,6 +299,7 @@ h1, .decouvrez {
   justify-content: center;
   border-radius: 0 20px 20px 0;
   transition: transform 500ms;
+  /* 'transition check' */
   transform: translateX(0);
   margin-right: 0 !important;
   position: absolute !important;
