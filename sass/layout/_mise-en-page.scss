@@ -65,6 +65,13 @@
     align-items: center;
     margin-bottom: 60px;
 
+    @media only screen and (min-width: 768px)
+{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
     &--fonctionnement
     {
         background-color: #f2f2f2;
@@ -105,6 +112,11 @@
 h2{
     margin-top: 40px;
     width: 100%;
+
+    @media only screen and (min-width: 768px)
+    {
+        width: 15%;
+    }
 }
 
 .fa-mobile-alt
@@ -136,6 +148,15 @@ background-color: #f2f2f2;
 display: flex;
 flex-direction: column;
 align-items: center;
+align-items: flex-start;
+justify-content: space-between;
+
+@media only screen and (min-width: 768px)
+{
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
         &--menu
         {
@@ -145,7 +166,27 @@ align-items: center;
         max-width: 300px;
         margin-bottom: 30px;
         
+        @media only screen and (min-width: 768px)
+        {
+            margin-top: 10px;
+            
+            
         }
+        }
+}
+
+.conteneur-restaurants-liste
+{
+    flex: 1;
+}
+.conteneur-restaurants-liste-wrap
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 700px;
+    justify-content: space-around;
+    margin: auto;
 }
 
 .nouveau
@@ -254,7 +295,7 @@ background-color: #383838;
 
 .bouton:hover
 {
-    background-color: linear-gradient(to left top, #9256dc63 #ff79d95d);
+    background: linear-gradient(to left top, #dec4ff, #ff91e0);
     box-shadow: 0 3px 3px 3px #a5a4a4;
 }
 
@@ -290,16 +331,6 @@ h1, .decouvrez
     margin-right: 2px;
 }
 
-@media only screen and (min-width: 768px)
-{
-.conteneur-fonctionnement
-{
-    flex-direction: row;
-}
+/*
 
-.conteneur-restaurants
-{
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-}
+*/
