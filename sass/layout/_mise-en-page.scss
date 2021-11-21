@@ -68,7 +68,10 @@
     @media only screen and (min-width: 768px)
 {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 100px;
 }
 
 
@@ -79,6 +82,7 @@
         height: 40px;
         border-radius: 20px;
         padding-top: 20px;
+        box-shadow: #e4e4e4 0px 2px 2px 2px;
     }
    
     .fonctionnement-puce
@@ -165,10 +169,11 @@ justify-content: space-between;
         background-color: white;
         max-width: 300px;
         margin-bottom: 30px;
+        box-shadow: #e4e4e4 0px 2px 2px 2px;
         
         @media only screen and (min-width: 768px)
         {
-            margin-top: 10px;
+            margin-top: 20px;
             
             
         }
@@ -178,6 +183,10 @@ justify-content: space-between;
 .conteneur-restaurants-liste
 {
     flex: 1;
+    @media only screen and (min-width: 768px)
+    {
+    margin-right: 150px;
+    }
 }
 .conteneur-restaurants-liste-wrap
 {
@@ -194,7 +203,7 @@ justify-content: space-between;
    width: 60px;
    background-color: $tertiaire;
    color: rgb(18, 114, 18);
-   margin-top: 100px;
+   margin-top: 25px;
    margin-left: 200px;
    position: absolute;
    font-size: 15px;
@@ -202,18 +211,29 @@ justify-content: space-between;
    padding-left: 5px;
    padding-right: 5px;
 
+   @media only screen and (min-width: 768px)
+   {
+       margin-top: 30px;
+       margin-left: 550px;
+   }
+
    &--nouveau2
    {
        width: 60px;
        background-color: $tertiaire;
        color: rgb(18, 114, 18);
-       margin-top: 360px;
+       margin-top: 280px;
        margin-left: 200px;
        position: absolute;
        font-size: 15px;
        padding-left: 5px;
        padding-right: 5px;
-      
+    
+       @media only screen and (min-width: 768px)
+   {
+       margin-top: 30px;
+       margin-left: -150px;
+   }
    }
 }
 

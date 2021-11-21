@@ -23,6 +23,7 @@ width: 200px  ;
     position: relative;
     width: 100%;
     align-items: center;
+    text-overflow: ellipsis;
     
     @media only screen and (min-width: 768px)
     {
@@ -107,6 +108,7 @@ h1
     animation: apparition-choix 0.5s ;  /* apparition */
     animation-timing-function: ease-in-out; 
     animation-fill-mode: forwards; /* <-cacher 'check'  */
+    text-overflow: ellipsis;
 
     &__confirmation
 {
@@ -124,6 +126,7 @@ h1
     margin-right: 0 !important;
     position: absolute !important;
     right: -75px;
+    text-overflow: ellipsis;
 }
 
 &__icon
@@ -137,6 +140,7 @@ h1
 {
     padding-top: 40px;
     padding-right: 15px;
+    text-overflow: ellipsis;
 }
 
   .choix:hover .choix__confirmation 
@@ -149,6 +153,8 @@ h1
     width: 100%;
     display: flex;
     justify-content: space-between;
+    text-overflow: ellipsis;
+
   } 
 
 
@@ -171,11 +177,13 @@ a
 h2
 {
 font-size: 17px;
+text-overflow: ellipsis;
 }
 
 p
 {
 font-size: 13px;
+text-overflow: ellipsis;
 }
 
 h1
