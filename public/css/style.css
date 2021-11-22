@@ -295,7 +295,6 @@ h1, .decouvrez {
   position: relative;
   width: 100%;
   align-items: center;
-  text-overflow: ellipsis;
 }
 @media only screen and (min-width: 768px) {
   .bloc-page-restaurant-details .conteneur-la-note .conteneur-menu {
@@ -361,6 +360,9 @@ h1, .decouvrez {
   /* <-cacher 'check'  */
   text-overflow: ellipsis;
 }
+.bloc-page-restaurant-details .choix:hover i {
+  transform: rotate(0);
+}
 .bloc-page-restaurant-details .choix__confirmation {
   margin-right: -70px;
   width: 75px;
@@ -371,22 +373,33 @@ h1, .decouvrez {
   align-items: center;
   justify-content: center;
   border-radius: 0 20px 20px 0;
-  transition: transform 500ms;
-  /* 'transition check' */
-  transform: translateX(0);
+  transition-duration: 1s;
   margin-right: 0 !important;
   position: absolute !important;
   right: -75px;
-  text-overflow: ellipsis;
 }
 .bloc-page-restaurant-details .choix__icon {
-  animation: spin 0.5s linear;
-  animation-duration: 2s;
+  transition: transform 2s;
+  transform: rotate(180deg);
+}
+.bloc-page-restaurant-details .intitule {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bloc-page-restaurant-details .intituleh2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bloc-page-restaurant-details .intitulep {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .bloc-page-restaurant-details .prix {
   padding-top: 40px;
   padding-right: 15px;
-  text-overflow: ellipsis;
 }
 .bloc-page-restaurant-details .choix:hover .choix__confirmation {
   transform: translateX(-75px);
@@ -395,7 +408,6 @@ h1, .decouvrez {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  text-overflow: ellipsis;
 }
 .bloc-page-restaurant-details .footer--logo-blanc {
   width: 100px;
@@ -409,11 +421,9 @@ h1, .decouvrez {
 }
 .bloc-page-restaurant-details h2 {
   font-size: 17px;
-  text-overflow: ellipsis;
 }
 .bloc-page-restaurant-details p {
   font-size: 13px;
-  text-overflow: ellipsis;
 }
 .bloc-page-restaurant-details h1 {
   font-family: "Shrikhand", cursif;

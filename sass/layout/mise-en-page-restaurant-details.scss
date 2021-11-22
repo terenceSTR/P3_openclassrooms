@@ -23,7 +23,6 @@ width: 200px  ;
     position: relative;
     width: 100%;
     align-items: center;
-    text-overflow: ellipsis;
     
     @media only screen and (min-width: 768px)
     {
@@ -105,10 +104,14 @@ h1
     width: 95%;
     margin-top: 20px;
     overflow: hidden;
-    animation: apparition-choix 0.5s ;  /* apparition */
+    animation: apparition-choix 0.5s;  /* apparition */
     animation-timing-function: ease-in-out; 
     animation-fill-mode: forwards; /* <-cacher 'check'  */
     text-overflow: ellipsis;
+
+    &:hover i {
+        transform: rotate(0);
+    }
 
     &__confirmation
 {
@@ -121,26 +124,47 @@ h1
     align-items: center;
     justify-content: center;
     border-radius: 0 20px 20px 0 ;
-    transition: transform 500ms; /* 'transition check' */
-    transform: translateX(0);
+    transition-duration: 1s;
     margin-right: 0 !important;
     position: absolute !important;
     right: -75px;
-    text-overflow: ellipsis;
-}
 
+
+
+}
 &__icon
 {
-    animation: spin 0.5s linear;
-    animation-duration: 2s;
+    transition: transform 2s;
+    transform: rotate(180deg);
 }
+
+}
+
+.intitule
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &h2
+    {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
+
+    &p
+    {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
 }
 
 .prix
 {
     padding-top: 40px;
     padding-right: 15px;
-    text-overflow: ellipsis;
 }
 
   .choix:hover .choix__confirmation 
@@ -153,7 +177,6 @@ h1
     width: 100%;
     display: flex;
     justify-content: space-between;
-    text-overflow: ellipsis;
 
   } 
 
@@ -177,13 +200,11 @@ a
 h2
 {
 font-size: 17px;
-text-overflow: ellipsis;
 }
 
 p
 {
 font-size: 13px;
-text-overflow: ellipsis;
 }
 
 h1
