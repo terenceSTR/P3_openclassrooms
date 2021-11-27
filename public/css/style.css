@@ -278,7 +278,7 @@ h1, .decouvrez {
 
 */
 .bloc-page-restaurant-details .conteneur-logo--logo {
-  width: 200px;
+  width: 180px;
 }
 .bloc-page-restaurant-details .conteneur-la-note {
   display: flex;
@@ -327,7 +327,7 @@ h1, .decouvrez {
   position: absolute;
 }
 .bloc-page-restaurant-details .fa-heart {
-  padding-top: 15px;
+  padding-top: 20px;
   padding-right: 15px;
 }
 .bloc-page-restaurant-details img {
@@ -353,11 +353,10 @@ h1, .decouvrez {
   width: 95%;
   margin-top: 20px;
   overflow: hidden;
-  animation: apparition-choix 0.5s;
-  /* apparition */
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  /* <-cacher 'check'  */
+  position: relative;
+  /* animation: apparition-choix 0.5s;   apparition 
+   animation-timing-function: ease-in-out; 
+   animation-fill-mode: forwards; <-cacher 'check'  */
   text-overflow: ellipsis;
 }
 .bloc-page-restaurant-details .choix:hover i {
@@ -405,9 +404,48 @@ h1, .decouvrez {
   transform: translateX(-75px);
 }
 .bloc-page-restaurant-details .intitule-prix {
+  transition: width 1s;
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+.bloc-page-restaurant-details .choix:hover .intitule-prix {
+  width: calc(100% - 75px);
+}
+.bloc-page-restaurant-details .intitule p, .bloc-page-restaurant-details .intitule h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bloc-page-restaurant-details .choix:nth-child(3) {
+  animation: apparition 2s backwards;
+}
+.bloc-page-restaurant-details .choix:nth-child(4) {
+  animation: apparition 2s 0.2s backwards;
+}
+.bloc-page-restaurant-details .choix:nth-child(5) {
+  animation: apparition 2s 0.4s backwards;
+}
+.bloc-page-restaurant-details .choix:nth-child(6) {
+  animation: apparition 2s 0.6s backwards;
+}
+.bloc-page-restaurant-details .choix:nth-child(8) {
+  animation: apparition 2s 0.8s backwards;
+}
+.bloc-page-restaurant-details .choix:nth-child(9) {
+  animation: apparition 2s 1s backwards;
+}
+.bloc-page-restaurant-details .choix:nth-child(10) {
+  animation: apparition 2s 1.2s backwards;
+}
+.bloc-page-restaurant-details .choix:nth-child(12) {
+  animation: apparition 2s 1.4s backwards;
+}
+.bloc-page-restaurant-details .choix:nth-child(13) {
+  animation: apparition 2s 1.6s backwards;
+}
+.bloc-page-restaurant-details .choix:nth-child(14) {
+  animation: apparition 2s 1.8s backwards;
 }
 .bloc-page-restaurant-details .footer--logo-blanc {
   width: 100px;
@@ -432,6 +470,7 @@ h1, .decouvrez {
 }
 .bloc-page-restaurant-details .fa-arrow-left {
   color: black;
+  font-size: 20px;
 }
 
 body {
@@ -473,6 +512,16 @@ p, h1, h2, h3, h4 {
   100% {
     transform: scale(1);
     opacity: 100%;
+  }
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(15%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

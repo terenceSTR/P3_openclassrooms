@@ -3,7 +3,7 @@
 
 .conteneur-logo--logo
  {
-width: 200px  ;
+width: 180px  ;
 }
 
 .conteneur-la-note
@@ -69,7 +69,7 @@ h4
 
 .fa-heart
 {
-   padding-top: 15px;
+   padding-top: 20px;
     padding-right: 15px;
 }
 
@@ -104,9 +104,10 @@ h1
     width: 95%;
     margin-top: 20px;
     overflow: hidden;
-    animation: apparition-choix 0.5s;  /* apparition */
+    position: relative;
+   /* animation: apparition-choix 0.5s;   apparition 
     animation-timing-function: ease-in-out; 
-    animation-fill-mode: forwards; /* <-cacher 'check'  */
+    animation-fill-mode: forwards; <-cacher 'check'  */
     text-overflow: ellipsis;
 
     &:hover i {
@@ -172,15 +173,65 @@ h1
     transform: translateX(-75px);
   }
 
-  .intitule-prix 
-  {
+  .intitule-prix {
+    transition: width 1s;
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
 
-  } 
+.choix:hover .intitule-prix {
+    width: calc(100% - 75px);
+}
 
+.intitule 
+{
+    p, h2{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+}
 
+.choix:nth-child(3) {
+    animation: apparition 2s backwards;
+} 
+
+.choix:nth-child(4) {
+    animation: apparition 2s 0.2s backwards;
+} 
+
+.choix:nth-child(5) {
+    animation: apparition 2s 0.4s backwards;
+} 
+
+.choix:nth-child(6) {
+    animation: apparition 2s 0.6s backwards;
+} 
+
+.choix:nth-child(8) {
+    animation: apparition 2s 0.8s backwards;
+} 
+
+.choix:nth-child(9) {
+    animation: apparition 2s 1s backwards;
+}
+
+.choix:nth-child(10) {
+    animation: apparition 2s 1.2s backwards;
+}
+
+.choix:nth-child(12) {
+    animation: apparition 2s 1.4s backwards;
+}
+
+.choix:nth-child(13) {
+    animation: apparition 2s 1.6s backwards;
+}
+
+.choix:nth-child(14) {
+    animation: apparition 2s 1.8s backwards;
+}
   
 .footer--logo-blanc
 {
@@ -217,6 +268,7 @@ h1
 .fa-arrow-left
 {
     color: black;
+    font-size: 20px;
 }
 
 }
