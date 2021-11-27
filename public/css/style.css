@@ -255,14 +255,13 @@
 
 .fa-heart {
   color: gray;
-  /*border: solid 1px #f2f2f2;*/
 }
 .fa-heart:hover {
   transition: 700ms;
   color: #9356DC;
 }
 
-h1, .decouvrez {
+.reservez, .decouvrez {
   text-align: center;
 }
 
@@ -274,9 +273,6 @@ h1, .decouvrez {
   margin-right: 2px;
 }
 
-/*
-
-*/
 .bloc-page-restaurant-details .conteneur-logo--logo {
   width: 180px;
 }
@@ -485,6 +481,12 @@ p, h2, h4 {
 
 p, h1, h2, h3, h4 {
   color: black;
+}
+
+h1 {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: bold;
 }
 
 @keyframes chargeur {

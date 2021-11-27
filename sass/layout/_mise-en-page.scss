@@ -327,7 +327,6 @@ color: $primaire;
 .fa-heart
 {
     color: gray;
-    /*border: solid 1px #f2f2f2;*/
 
     &:hover
     {
@@ -337,9 +336,10 @@ color: $primaire;
     
 }
 
-h1, .decouvrez
+.reservez, .decouvrez
 {
     text-align: center;
+
 }
 
 .fa-utensils
@@ -351,6 +351,3 @@ h1, .decouvrez
     margin-right: 2px;
 }
 
-/*
-
-*/
