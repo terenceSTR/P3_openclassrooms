@@ -72,8 +72,8 @@
 #bloc-page .conteneur-fonctionnement .fonctionnement-puce {
   background-color: #9356DC;
   color: white;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border-radius: 30px;
   text-align: center;
   position: absolute;
@@ -156,7 +156,7 @@
   margin: auto;
 }
 #bloc-page .nouveau {
-  width: 60px;
+  width: 70px;
   background-color: #99E2D0;
   color: #127212;
   margin-top: 25px;
@@ -174,7 +174,7 @@
   }
 }
 #bloc-page .nouveau--nouveau2 {
-  width: 60px;
+  width: 70px;
   background-color: #99E2D0;
   color: #127212;
   margin-top: 280px;
@@ -211,6 +211,7 @@
 .conteneur-logo {
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 .conteneur-logo--logo {
   width: 180px;
