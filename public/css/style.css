@@ -351,9 +351,6 @@
   margin-top: 20px;
   overflow: hidden;
   position: relative;
-  /* animation: apparition-choix 0.5s;   apparition 
-   animation-timing-function: ease-in-out; 
-   animation-fill-mode: forwards; <-cacher 'check'  */
   text-overflow: ellipsis;
 }
 .bloc-page-restaurant-details .choix:hover i {
@@ -502,19 +499,6 @@ h1 {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-@keyframes apparition-choix {
-  0% {
-    transform: scale(0);
-    opacity: 0%;
-  }
-  50% {
-    opacity: 0%;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 100%;
   }
 }
 @keyframes apparition {
